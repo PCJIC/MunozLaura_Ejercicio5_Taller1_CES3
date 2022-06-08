@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE ListaCompras SYSTEM "ListaCompras.dtd">
+
+<ListaCompras>
+    <Venta>
+        <VentaCredito FechaFinPago="24/10/2019" Cantidad="2">
+            Se vendió una almohada
+        </VentaCredito>
+    </Venta>
+    <Venta>
+        <VentaInmediata Cantidad="3" Divisa="cop">
+            Se vendió un balón
+        </VentaInmediata>
+    </Venta>
+    <Venta>
+        <VentaInmediata Cantidad="3" Divisa="cop">
+            Se vendió un lapicero
+        </VentaInmediata>
+    </Venta>
+    <Venta>
+        <VentaCredito Cantidad="2">
+            Se vendió una almohada sin fecha de fin de pago definida
+        </VentaCredito>
+    </Venta>
+</ListaCompras>
