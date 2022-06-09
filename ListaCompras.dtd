@@ -1,8 +1,8 @@
 <!ELEMENT ListaCompras (Venta)+>
     <!ELEMENT Venta (VentaCredito | VentaInmediata)>
-        <!ELEMENT VentaCredito (#PCDATA)>
-            <!ATTLIST  VentaCredito FechaFinPago CDATA #IMPLIED>
-            <!ATTLIST  VentaCredito Cantidad CDATA #REQUIRED>
-        <!ELEMENT VentaInmediata (#PCDATA)>
-            <!ATTLIST  VentaInmediata Cantidad CDATA #REQUIRED>
-            <!ATTLIST  VentaInmediata Divisa CDATA #REQUIRED>
+        <!ELEMENT VentaCredito (FechaFinPago?, CantidadCredito+)>
+        <!ELEMENT FechaFinPago (#PCDATA)>
+        <!ELEMENT CantidadCredito (#PCDATA)>
+        <!ELEMENT VentaInmediata (Cantidad+, Divisa+)>
+        <!ELEMENT Cantidad (#PCDATA)>
+        <!ELEMENT Divisa (#PCDATA)>

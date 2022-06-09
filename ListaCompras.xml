@@ -2,25 +2,30 @@
 
 <!DOCTYPE ListaCompras SYSTEM "ListaCompras.dtd">
 
-<ListaCompras>
+<ListaCompras xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="ListaCompras.xsd">
     <Venta>
-        <VentaCredito FechaFinPago="24/10/2019" Cantidad="2">
-            Se vendió una almohada
+        <VentaCredito>
+            <FechaFinPago></FechaFinPago>
+            <CantidadCredito></CantidadCredito>
         </VentaCredito>
     </Venta>
     <Venta>
-        <VentaInmediata Cantidad="3" Divisa="cop">
-            Se vendió un balón
+        <VentaInmediata>
+            <Cantidad></Cantidad>
+            <Divisa></Divisa>
         </VentaInmediata>
     </Venta>
     <Venta>
-        <VentaInmediata Cantidad="3" Divisa="cop">
-            Se vendió un lapicero
+        <VentaInmediata>
+            <Cantidad></Cantidad>
+            <Divisa></Divisa>
         </VentaInmediata>
     </Venta>
     <Venta>
-        <VentaCredito Cantidad="2">
-            Se vendió una almohada sin fecha de fin de pago definida
-        </VentaCredito>
+        <VentaInmediata>
+            <Cantidad></Cantidad>
+            <Divisa></Divisa>
+        </VentaInmediata>
     </Venta>
 </ListaCompras>
